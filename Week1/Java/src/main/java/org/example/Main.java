@@ -10,6 +10,9 @@ public class Main
         solution2(13,54);
         solution3(9,5);
         BirthYear(7);
+        CompareNum(7,7);
+        CompareNum(81,6);
+        SumNum(5,5246);
 
     }
 
@@ -75,5 +78,39 @@ public class Main
         int answer = birthYear;
         return answer;
 
+    }
+
+    public static int CompareNum(int num1, int num2)
+    {
+        int answer;
+        if(num1<0||num1>10000||num2<0||num2>10000)
+        {
+            System.out.println("0부터 10000까지의 수로 작성");
+            return 0;
+        }
+        else if(num1==num2)
+        {
+            answer=1;
+        }
+        else
+        {
+            answer=-1;
+        }
+
+        System.out.println(answer);
+
+        return answer;
+    }
+
+    public static int SumNum(int num1, int num2)
+    {
+        if(num1<-50000||num1>50000||num2<-50000||num2>50000)
+        {
+            System.out.println("-50000~50000까지의 정수를 입력해주세요");
+            return 0;
+        }
+        int answer=num1+num2;
+        System.out.println(answer);
+        return answer;
     }
 }
