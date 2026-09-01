@@ -13,7 +13,7 @@ public class Main
         CompareNum(7,7);
         CompareNum(81,6);
         SumNum(5,5246);
-
+        DivideNum(4,6);
     }
 
     public static int solution(int num1, int num2)
@@ -110,6 +110,20 @@ public class Main
             return 0;
         }
         int answer=num1+num2;
+        System.out.println(answer);
+        return answer;
+    }
+
+    public static int DivideNum(int num1, int num2)
+    {
+        if(num1<=0||num1>100||num2<=0||num2>100)
+        {
+            System.out.println("1~100까지의 정수로 작성해주세요");
+            return 0;
+        }
+        float calculate= ((float)num1/num2)*1000;
+        int answer = (int)calculate;
+
         System.out.println(answer);
         return answer;
     }
