@@ -148,4 +148,26 @@ public class Main
         System.out.println(answer);
         return answer;
     }
+
+    public static int EvenDivide(int n)
+    {
+        // 0~1000까지 제한
+        if(n<=0||n>1000)
+        {
+            return 0;
+        }
+        int answer;
+        int calculate=0; //초기화
+
+        //n이하의 짝수의 합 = n/2 (정수) 이하의 각 수를 더한 후 *2
+        int divide = n/2;
+
+        for (int i=1; i<=divide ; i++)
+        {
+            calculate+=i;
+        }
+        answer = calculate*2;
+
+        return answer;
+    }
 }
