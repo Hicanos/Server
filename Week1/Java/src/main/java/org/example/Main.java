@@ -14,6 +14,9 @@ public class Main
         CompareNum(81,6);
         SumNum(5,5246);
         DivideNum(4,6);
+        AngleTest(75);
+        AngleTest(135);
+        AngleTest(270);
     }
 
     public static int solution(int num1, int num2)
@@ -123,6 +126,24 @@ public class Main
         }
         float calculate= ((float)num1/num2)*1000;
         int answer = (int)calculate;
+
+        System.out.println(answer);
+        return answer;
+    }
+
+    public static int AngleTest(int angle)
+    {
+        int answer;
+        if(angle<=0||angle>180)
+        {
+            System.out.println("1~180사이의 정수를 입력해주세요");
+            return 0;
+        }
+
+        answer = (angle==90) ? 2
+                :(angle<90) ? 1
+                :(angle==180) ? 4
+                :3;
 
         System.out.println(answer);
         return answer;
