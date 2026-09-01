@@ -6,14 +6,8 @@ public class Main
 {
     public static void main(String[] args)
     {
-        solution(4,2);
-        solution(-3,-2);
-        solution(5000,-5000);
-        solution(50001,6);
-        solution(-57000,9);
-        solution(5,50020);
-        solution(10,-50001);
-        solution(50102,-59102);
+        solution(5000,1024);
+        solution2(153,54);
     }
 
     public static int solution(int num1, int num2)
@@ -26,6 +20,21 @@ public class Main
         else
         {
             int answer = num1-num2;
+            System.out.println(answer);
+            return answer;
+        }
+    }
+
+    public static int solution2(int num1, int num2)
+    {
+        if(num1<-50000||num1>50000||num2<-50000||num2>50000)
+        {
+            System.out.println("-50000~50000까지의 정수를 입력해주세요");
+            return 0;
+        }
+        else
+        {
+            int answer = num1*num2;
             System.out.println(answer);
             return answer;
         }
