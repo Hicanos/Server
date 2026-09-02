@@ -6,17 +6,10 @@ public class Main
 {
     public static void main(String[] args)
     {
-        solution(5000,1024);
-        solution2(13,54);
-        solution3(9,5);
-        BirthYear(7);
-        CompareNum(7,7);
-        CompareNum(81,6);
-        SumNum(5,5246);
-        DivideNum(4,6);
-        AngleTest(75);
-        AngleTest(135);
-        AngleTest(270);
+        CodeKata codeKata = new CodeKata();
+        codeKata.Average(new int[]{1, 3, 4, 5});
+        codeKata.Average(new int[]{67, 48, 24, 872});
+        codeKata.Average(new int[]{-1,100,6,7,94,6});
     }
 
     public static int solution(int num1, int num2)
@@ -167,7 +160,7 @@ public class Main
             calculate+=i;
         }
         answer = calculate*2;
-
+        System.out.println(answer);
         return answer;
     }
 }
