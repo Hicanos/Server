@@ -7,12 +7,7 @@ public class Main
     public static void main(String[] args)
     {
         CodeKata codeKata = new CodeKata();
-        codeKata.Average(new int[]{1, 3, 4, 5});
-        codeKata.Average(new int[]{67, 48, 24, 872});
-        codeKata.OddEven(0);
-        codeKata.OddEven(697);
-        codeKata.ArrAverage(new int[]{12,1002,4584,1502,7245});
-        codeKata.ArrAverage(new int[]{1302,4295,2925829});
+        codeKata.SumPosition(75);
     }
 
     public static int solution(int num1, int num2)

@@ -61,4 +61,20 @@ public class CodeKata
         System.out.println("평균값:"+answer);
         return answer;
     }
+
+    public int SumPosition(int n)
+    {
+        int sum = 0;
+        //num의 각 자릿수를 더함
+        // 반복문으로 num/10 = 0이 될 때까지 반복
+        while(n>0)
+        {
+            sum += n%10; //10으로 나눈 나머지 = 10 미만의 정수
+            n /= 10;
+        }
+
+        int answer = sum;
+        System.out.println("정답:"+answer);
+        return answer;
+    }
 }
