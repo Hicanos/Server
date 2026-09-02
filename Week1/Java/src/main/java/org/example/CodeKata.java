@@ -77,4 +77,26 @@ public class CodeKata
         System.out.println("정답:"+answer);
         return answer;
     }
+
+    public int SumFactor(int n)
+    {
+        if(n<0||n>3000)
+        {
+            return 0;
+        }
+        int answer = 0;
+        int div;
+
+        for(int i=1;i<=n;i++)
+        {
+            div = n % i;
+            if(div==0)
+            {
+                //나머지가 0 = 약수
+                answer+=i;
+            }
+            //아니라면 다음 반복 진행
+        }
+        return answer;
+    }
 }
