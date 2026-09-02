@@ -9,7 +9,10 @@ public class Main
         CodeKata codeKata = new CodeKata();
         codeKata.Average(new int[]{1, 3, 4, 5});
         codeKata.Average(new int[]{67, 48, 24, 872});
-        codeKata.Average(new int[]{-1,100,6,7,94,6});
+        codeKata.OddEven(0);
+        codeKata.OddEven(697);
+        codeKata.ArrAverage(new int[]{12,1002,4584,1502,7245});
+        codeKata.ArrAverage(new int[]{1302,4295,2925829});
     }
 
     public static int solution(int num1, int num2)
