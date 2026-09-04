@@ -99,4 +99,22 @@ public class CodeKata
         }
         return answer;
     }
+
+    public int RemainOne(int n)
+    {
+        if(n<3||n>1000000)
+        {
+            return 0;
+        }
+        // 1은 나머지가 안나옴
+        int answer = 1;
+        int remain = 0;
+        while(remain!=1)
+        {
+            answer++; //2부터 계산 시작
+            remain=n%answer;
+        }
+
+        return answer;
+    }
 }
