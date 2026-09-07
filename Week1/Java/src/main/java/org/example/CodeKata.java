@@ -117,4 +117,19 @@ public class CodeKata
 
         return answer;
     }
+
+    public long[] XCountN(int x, int n) {
+        long[] answer = new long[n] ;
+
+        // 횟수 i == n 가 되면 n회 추가한 것
+        //x x*2 x*3... x*n을 전부 answer에 추가
+
+        for(int i=1; i<=n; i++)
+        {
+            answer[i-1] = (long)x*i; //배열 0번부터 삽입
+        }
+
+        System.out.println("정답:"+java.util.Arrays.toString(answer));
+        return answer;
+    }
 }

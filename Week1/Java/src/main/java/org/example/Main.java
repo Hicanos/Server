@@ -8,6 +8,7 @@ public class Main
     {
         CodeKata codeKata = new CodeKata();
         codeKata.SumPosition(75);
+        codeKata.XCountN(2,5); //기대값: [2,4,6,8,10]
     }
 
     public static int solution(int num1, int num2)
