@@ -132,4 +132,23 @@ public class CodeKata
         System.out.println("정답:"+java.util.Arrays.toString(answer));
         return answer;
     }
+
+    public int[] ReverseArray(long n)
+    {
+        // 배열은 n의 자릿수만큼 존재 => log10(1000) = 3,
+        int[] answer = new int[(int)Math.log10(n)+1];
+        int div=0;
+        // n의 각 자리 숫자를 순서대로 배열에 넣음(n%10)을 반복, 0부터 가장 최상위 자릿수까지
+
+        for(int i=0; n>0; i++)
+        {
+            div = (int)(n%10);
+            answer[i] = div;
+            n /= 10;
+        }
+        //모든 자릿수를 집어 넣으면 종료
+
+        System.out.println("정답:"+java.util.Arrays.toString(answer));
+        return answer;
+    }
 }

@@ -9,6 +9,8 @@ public class Main
         CodeKata codeKata = new CodeKata();
         codeKata.SumPosition(75);
         codeKata.XCountN(2,5); //기대값: [2,4,6,8,10]
+        codeKata.ReverseArray(14679); //기대값 [9,7,6,4,1]
+        codeKata.ReverseArray(37984); //기대값 [4,8,9,7,3]
     }
 
     public static int solution(int num1, int num2)
