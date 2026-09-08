@@ -7,10 +7,10 @@ public class Main
     public static void main(String[] args)
     {
         CodeKata codeKata = new CodeKata();
-        codeKata.SumPosition(75);
-        codeKata.XCountN(2,5); //기대값: [2,4,6,8,10]
-        codeKata.ReverseArray(14679); //기대값 [9,7,6,4,1]
-        codeKata.ReverseArray(37984); //기대값 [4,8,9,7,3]
+        codeKata.StringToint("123");
+        codeKata.StringToint("-7516");
+        codeKata.StringToint("abc"); //기대값: 수, 혹은 +나 -가 아닙니다.
+        codeKata.StringToint("+7516");
     }
 
     public static int solution(int num1, int num2)

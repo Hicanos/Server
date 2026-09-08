@@ -151,4 +151,18 @@ public class CodeKata
         System.out.println("정답:"+java.util.Arrays.toString(answer));
         return answer;
     }
+
+    public int StringToint(String s)
+    {
+        //s는 숫자가 아닌 수이며, +나 -는 허용, 그 외의 문자는 허용하지 않음
+        if(!s.matches("^[+-]?\\d+$"))
+        {
+            System.out.println("수, 혹은 +나 -가 아닙니다.");
+            return 0;
+        }
+        int answer = Integer.parseInt(s);
+
+        System.out.println("정답:"+answer);
+        return answer;
+    }
 }
